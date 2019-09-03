@@ -1,0 +1,105 @@
+@charset "utf-8";
+
+@import url('https://fonts.googleapis.com/css?family=Poiret+One');
+
+/* reset.css */
+html, body, div, object, iframe, h1, h2, h3, h4, h5, h6, p, blockquote, address, dl, dt, dd, ol, ul, li, fieldset, form, legend, table, caption, tbody, tfoot, thead, tr, th, td, input, select, textarea{margin:0; padding:0;}
+h1, h2, h3, h4, h5, h6{font-size:100%;}
+img, fieldset{border:0px;}
+table{border-collapse:collapse;}
+ul, ol, li{list-style:none;}
+address, em{font-style:normal;}
+li img, object{vertical-align:top;}
+input, select, textarea, form img{vertical-align:middle;}
+a{ outline:0; text-decoration:none; border:nonbe;}
+body { font: 12px /1.2 Dotum, "돋움", arial; color:#666;   }
+.noMargin { margin:0px;}
+
+.frame {
+   position:fixed; width:100%; height:100%;
+   background-color:lightblue;
+   animation:bgcolor linear 10s infinite;
+}
+#wrap {
+   width:940px; height:500px; 
+   position:absolute; top:50%; left:50%;
+   margin-top:-250px; margin-left:-470px;
+}
+.house {
+   position:absolute; bottom:0px; left:0px;
+}
+
+.circle {
+   position:absolute; left:290px; bottom:100px;
+   animation:rotation linear 8s infinite alternate;
+}
+.man1 {
+   position:absolute; bottom:0px; right:2%; opacity:0;
+   animation:man1 linear 8s infinite;
+}
+.man2 {
+   position:absolute; bottom:0px; left:2%; 
+   animation:man2 linear 8s infinite;
+}
+.cloud1 {
+   position:absolute; top:100px; right:2%; opacity:0;
+   animation:man1 linear 14s infinite;
+}
+.cloud2 {
+   position:absolute; top:120px; right:2%; opacity:0;
+   animation:man1 linear 7s infinite; opacity:0.5;
+}
+.cloud3 {
+   position:absolute; top:60px; right:2%; opacity:0;
+   animation:man1 linear 12s infinite; opacity:0.5;
+}
+.sun {
+   position:absolute; bottom:0px; left:0%; margin-left:-100px;
+   animation:rotation2 linear 10s infinite;
+   transform-origin:570px 150px;
+}
+@keyframes bgcolor {
+   0% {background:#586c98;}
+   15% {background:lightblue;}
+   45% {background:orange}
+   60% {background:pink;}
+   100% {background:#586c98;}
+}
+@keyframes rotation2 {
+   0% {transform:rotate(0deg);opacity:0; }
+   15% { opacity:1;}
+   45% {opacity:1;}
+   60% {opacity:0;}
+   100% {transform:rotate(360deg);opacity:0; }
+}
+@keyframes man1 {
+   0% { opacity:0; right:2%;}
+   20% { opacity:1;}
+   70% { opacity:1}
+   80% { right:98%; opacity:0;}
+   100% { opacity:0; right:2%;}
+}
+@keyframes man2 {
+   0% {left:2%;transform:rotateY(0deg);}
+   49.9% {transform:rotateY(0deg);}
+   50% {left:90%; transform:rotateY(180deg);}
+   99.9% {transform:rotateY(180deg);}
+   100% {left:2%; transform:rotateY(0deg);}
+}
+@keyframes rotation {
+   0% {transform:rotate(0deg);}
+   100% {transform:rotate(360deg);}
+}
+
+
+
+
+
+
+
+
+
+
+
+
+

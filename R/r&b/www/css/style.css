@@ -1,0 +1,261 @@
+@charset "utf-8";
+
+@font-face {
+    font-family: 'Nanumsquare';
+    src: url(./fonts/NanumSquareR.eot);
+    src: local('NanumSquareR'), url(./fonts/NanumSquareR.eot?#iefix) format('embedded-opentype'), url(./fonts/NanumSquareR.woff) format('woff'), url(./fonts/NanumSquareR.woff2) format('woff2'), url(./fonts/NanumSquareR.ttf) format('truetype');
+}
+@font-face{
+  font-family: 'NanumGothic';
+  src: url('/css/fonts/NanumGothic.eot'); 
+  src: local('NanumGothic'), url('/css/fonts/NanumGothic.woff') format('woff'), url('/css/fonts/NanumGothic.ttf') format('truetype'); 
+}
+@font-face{
+  font-family: 'DINPro';
+  src: url('/css/fonts/DINPro-Regular.eot'); 
+  src: local('DINPro-Regular'), url(./fonts/DINPro-Regular.eot?#iefix) format('embedded-opentype'), url('/css/fonts/DINPro-Regular.woff') format('woff'), url(./fonts/DINPro-Regular.woff2) format('woff2') url('/css/fonts/DINPro-Regular.ttf') format('truetype'); 
+}
+@import url('https://fonts.googleapis.com/css?family=Open+Sans:300,300i,400,400i,600,600i,700,700i,800,800i');
+
+/************************ headerTop ************************/
+.headerTop {width:100%; height:40px; background-color:#1d1d1d;}
+.topmenu {position:relative; width:1110px; margin:0 auto; clear:both;}
+.topmenu_left {float:left;}
+.topmenu_right {float:right;}
+.topmenu_left .topmenu_gnb {position: relative; float: left;}
+.topmenu_left .topmenu_gnb .side {color:#5b5b5b;}
+.topmenu_left .topmenu_gnb li {float: left; color:#fff; font:13px/40px "Open+Sans"; padding:0 10px; }
+.topmenu_left .topmenu_gnb li a:hover {color:#ec0260;}
+
+.topmenu_right .info {position: relative; float: right;}
+.topmenu_right .info li {
+	float: left; color:#fff; 
+	font:13px/40px "Open+Sans"; 
+	padding:0 10px; width:115px;
+	display:inline-block; text-align:center;
+}/*기본에 인라인블록/위드값 정하고/ 센터맞춰주면 호버전에 자리잡음*/
+.topmenu_right .info li a {width:115px;}
+.topmenu_right .info li a:hover {color:#ec0260; background-color:#fff; display:block; text-align:center;}/*호버했을때 블락형태*/
+
+
+
+/************************ header ************************/
+.headerWrap{width:100%;}
+#header {position:relative; height:121px; margin:0 auto; width:1110px;}
+#header .logo {text-align:center;  padding-top: 55px;}
+
+
+/************************ search ************************/
+.field-container {position:absolute; right:0px; top:57px;}
+.field-container input {
+	width: 216px; height: 31px; 
+	border: 1px solid #d2d2d2; border-radius:20px;
+	padding-left: 16px;
+}
+.field-container button {
+    position: absolute;
+	top:7px;
+	right:14px;
+    width: 20px;
+    height: 20px;
+    background: url(../img/main/search_ico.png) 50% 50% no-repeat;
+}
+
+
+
+/************************ gnb ************************/
+.headerWrap .gnb_bottom {clear: both; overflow: hidden; width:100%; border-top: 1px solid #eee; border-bottom: 1px solid #eee;}
+#gnb {position:relative; width:1110px; margin:0 auto; height:63px;}
+#gnb li {float:left; font:bold 17px/63px "Open+Sans"; padding:0 32px;}
+#gnb li a:hover {color:#ec0260;}
+
+.sild-menu {
+    width: 100%;
+    height: 280px;
+    box-sizing: border-box;
+    position: absolute;
+    z-index: 200;
+    top: 226px;
+    left: 0;
+    background-color: #1d1d1d;;
+    border-bottom: 1px solid #1a1a1a;
+}/*gnb_background*/
+
+.sild-menu-inner {
+    box-sizing: border-box;
+    width: 1110px;
+    margin: 0 auto;
+    padding: 15px 0 0 0px;
+    overflow: hidden;
+}
+.sild-menu dl:first-child {
+    border-left: none;
+}
+.sild-menu dl {
+    float: left;   
+    height: 240px;
+    border-left: 1px solid #454545;
+}
+/*
+메뉴 width값
+1-320
+2-216
+3-221
+4-161
+5-171
+*/
+
+/*안에 메뉴들을 그 width값에 맞춰주기*/
+.sild-menu dl:nth-of-type(1) {width:315px;}
+.sild-menu dl:nth-of-type(2) {width:211px;}
+.sild-menu dl:nth-of-type(3) {width:215px;}
+.sild-menu dl:nth-of-type(4) {width:156px;}
+.sild-menu dl:nth-of-type(5) {width:166px;}
+
+.sild-menu dl dd {
+    text-align: center;
+    margin: 0;
+    line-height: 30px;
+    font-size: 14px;
+    color: #242424;
+    font-weight: normal;
+}
+.sild-menu dl dd a {color:#ddd;}
+.sild-menu dl dd a:hover {color:#ec0260;}
+
+
+/************************ footer ************************/
+.footerWrap {width:100%; height:450px; background-color:#f1f2f4;}
+#footer {width:1110px; margin:0 auto;}
+#footer h2 {text-align:center;}
+#footer p {text-align:center; padding-top:60px; line-height:25px;}
+#footer .logo {padding:150px 0 48px 0px; border-bottom:}
+.footerWrap .f_line {border-bottom:1px solid #d2d3d5; width:100%; height:1px; }
+/************************ vis ************************/
+.visual {100%;}
+.carousel-container {
+  position: relative;
+  width: 100%;
+  height: 865px;
+  overflow: hidden;
+}
+.carousel-container .pagination {
+    text-align: center;
+    width: 100%;
+    position: absolute;
+    bottom: 67px;
+    left: 0; 
+}
+.carousel-container .bullet {
+    width: 10px;
+    height: 10px;
+    display: inline-block;
+    border-radius: 50%;
+    margin-right: 5px;
+	border:1px solid #000;
+}
+.carousel-container .pagination .active { background: #000; }
+.carousel-container .carousel-body {height:100%; }
+.carousel-container .carousel-slide { 
+	position: absolute; 
+	top: 0;
+    left: 0;
+    width: 100%;
+    display: none;
+    text-align: center;
+    min-height: 865px;
+    line-height: 865px;
+	background:url(../img/main/visual01.jpg);
+	background-position: center;
+    background-size: cover;
+}
+.carousel-container .carousel-slide:first-child {display: block; }
+.carousel-container .carousel-btn-next,
+.carousel-container .carousel-btn-prev {
+    position: absolute;
+    top: 50%;
+    width: 30px;
+    height: 30px;
+    margin-top: -15px;
+    line-height: 30px;
+    text-align: center;
+}
+.carousel-container .carousel-btn-next {right: 10px;}
+.carousel-container .carousel-btn-prev {left: 10px;}
+
+
+
+
+
+
+/************************ best_hair ************************/
+.best_hair {width:100%; height:1100px; background:url(../img/main/con02_01.png) 0 50% no-repeat; }
+.best_hair_wrap  {margin: 0 auto; width: 1110px; margin: 0 auto;}
+.best_hair_wrap .best_hair_box {width:411px; height:644px; background-color:#1f1f1f; float:right; margin-top:195px;}
+.best_hair_wrap .best_tit {float:right; padding-right:60px; margin-top:230px;}
+
+/************************ youtube ************************/
+.youtube {
+	height: 890px;
+    /*padding: 75px 0;*/
+    background: url(../img/main/con03_01.jpg) no-repeat 50% -10px;
+}
+.youtube_wrap {width: 1100px; margin: 0 auto; width: 1110px; margin: 0 auto;}
+.youtube .youtube_wrap #tit {height: 100px; margin-bottom:45px; position: relative; text-align: center; padding-top: 75px;}
+
+.youtube_wrap #tit .middle_bar {width: 50px; height: 1px; display: block; margin: 0 auto; background-color: black; margin-top: 20px;}
+#tit .inner_tit {text-align:center; font-size:45px; font-family: 'Noto Sans', sans-serif;}
+#tit .inner_tit .strong {font-weight:800;}
+#tit .inner_stit {text-align:center; font-size:23px; bottom:0px; font-family: 'Crimson Text', serif; margin-top: 20px;}
+.youtube .youtube_wrap .bx {
+    overflow: hidden;
+	height:465px;
+    padding: 50px;
+    background: white;
+    -webkit-box-shadow: 23px 20px 41px 0px rgba(197,193,189,0.7);
+    -moz-box-shadow: 23px 20px 41px 0px rgba(197,193,189,0.7);
+    box-shadow: 23px 9px 30px 0px rgba(25, 25, 25, 0.45);
+}
+.youtube .youtube_wrap .bx .display_mv {float:left;}
+.youtube .info {margin-left: 656px; padding: 20px 0 0 30px;}
+.youtube .info h4 { margin-bottom: 25px; font-size: 33px; font-weight: 200; line-height: 37px; color: #1F1F1F; letter-spacing: -1.1px;}
+.youtube .info .strong {font-weight:800;}
+.youtube .info .pink {color:#ec0260;}
+.youtube .info .desc {line-height: 130%; margin-bottom: 25px; font-size: 16px; color: #858585;}
+.youtube .info .more {width: 80px; height: 26px; background-color: #1f1f1f; text-align: center; padding-top: 4px; border-radius: 15px; color:#fff;}
+
+
+/************************ best_sellers ************************/
+.best_sellers {width:100%; height:1426px; background:#fff;}
+.best_sellers .best_sellers_wrap {width: 1100px; margin: 0 auto; width: 1110px; margin: 0 auto;}
+.best_sellers .best_sellers_wrap  #tit {height: 100px; margin-bottom:45px; position: relative; text-align: center; padding-top: 75px;}
+.best_sellers_wrap #tit .middle_bar {width: 50px; height: 1px; display: block; margin: 0 auto; background-color: black; margin-top: 20px;}
+
+
+
+/************************ magazine ************************/
+.magazine {width:100%; height:430px; background:#292929;}
+.magazine_wrap {margin: 0 auto; width: 1110px; margin: 0 auto;}
+
+
+/************************ instagram ************************/
+.instagram {width:100%; height:680px; background:#fff;}
+.instagram .instagram_wrap {margin: 0 auto; width: 1110px; margin: 0 auto;}
+.instagram .instagram_wrap  #tit {height: 100px; margin-bottom:80px; position: relative; text-align: center; padding-top: 75px;}
+.instagram_wrap #tit .middle_bar {width: 50px; height: 1px; display: block; margin: 0 auto; background-color: black; margin-top: 20px;}
+.insta_box {position:absoulte; width:1110px; height:370px; background-color:red; }
+.insta_box .box {width:185px; height:185px; float:left;}
+
+.insta_box .box:nth-of-type(1) {background-color:pink;}
+.insta_box .box:nth-of-type(2) {background-color:yellow;}
+.insta_box .box:nth-of-type(3) {background-color:black;}
+.insta_box .box:nth-of-type(4) {background-color:orange;}
+.insta_box .box:nth-of-type(5) {background-color:blue;}
+.insta_box .box:nth-of-type(6) {background-color:green;}
+
+.insta_box .box:nth-of-type(7) {background-color:yellow;}
+.insta_box .box:nth-of-type(8) {background-color:black;}
+.insta_box .box:nth-of-type(9) {background-color:green;}
+.insta_box .box:nth-of-type(10) {background-color:pink;}
+.insta_box .box:nth-of-type(11) {background-color:yellow;}
+.insta_box .box:nth-of-type(12) {background-color:orange;}
